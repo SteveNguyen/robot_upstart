@@ -59,7 +59,7 @@ if [ "$ROS_IP" = "" ]; then
   exit 1
 fi
 @[else]@
-export ROS_HOSTNAME=$(hostname).local
+export ROS_HOSTNAME=${HOSTNAME}.local
 @[end if]@
 
 @[if master_uri]@
